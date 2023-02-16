@@ -1,9 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="refresh" content="7; url='http://15.223.56.22/IntegrationProject/mypathfinding.html'" />
+  <meta http-equiv="refresh" content="3; url='http://15.223.56.22/IntegrationProject/mypathfinding.html'" />
   </head>
+  
+  <script>
+  var countdown = 2;
+  var timer = setInterval (function(){
+  if(countdown>0){
+  document.getElementById("cd").innerHTML = Math.floor(parseInt(countdown))+ " seconds";
+  }
+  countdown--;
+  }, 1000)
+  </script>
+
   <body>
-    <p>Please follow <a href="http://15.223.56.22/IntegrationProject/mypathfinding.html">this link</a>.</p>
+    <p>Redirecting in <a id="cd"> 3 seconds</a>, if not responding please click on <a href="http://15.223.56.22/IntegrationProject/mypathfinding.html">this link.</a>.</p>
+	
   </body>
 </html>
